@@ -87,6 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+  
 /* -------------------- Base Header - Footer Styles ------------------------ */
 
 header,
@@ -95,6 +100,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -109,11 +118,30 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer {
+  flex-direction: column;
+}
+.footer h4 {
+  margin: 20px 0;
 }
 
 footer .social-icons {
@@ -122,12 +150,20 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social {
+  margin: 50px 0;
+}
+
 footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
 /* -------------------- Mobile Style - Homepage ------------------------ */
 
 /* Hero Area */
@@ -136,7 +172,6 @@ footer .social p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
 }
 
 /* Aside */ 
@@ -148,6 +183,17 @@ aside {
   flex-flow: row wrap;
 }
 
+aside h3 {
+  margin: 20px 0;
+}
+
+/***
+
+aside p {
+  padding-bottom: 30px; ??
+
+  ***/
+
 /* Features */
 
 .features {
@@ -155,12 +201,28 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
 }
+.features h2 {
+  margin-bottom: 60px;
+}
 
-.features .features-items {
+.features p {
+  margin: 0;
+}
+
+.features .fontawesome-icon {
+  padding-bottom: 40px;
+}
+
+.features .features-item-description {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features article {
+  width: 60%;
+  margin: 30px 0;
 }
 
 /* Reviews */
@@ -169,6 +231,14 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h2 {
+  padding-bottom: 40px;
+}
+.reviews h3 {
+  width: 50%;
+  padding: 20px 0;
 }
 
 /* ==========================================================================
